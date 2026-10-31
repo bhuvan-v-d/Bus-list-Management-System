@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Bus List Management System</h1>
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Search Bus Number or Destination"
+        >
+
+        <br><br>
+
+        <label>Filter by Source:</label>
+
+        <select id="source">
+            <option value="">All Sources</option>
+            <option value="Mangaluru">Mangaluru</option>
+            <option value="Udupi">Udupi</option>
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Mysuru">Mysuru</option>
+            <option value="Shivamogga">Shivamogga</option>
+            <option value="Karkala">Karkala</option>
+        </select>
+
+        <label>Filter by Destination:</label>
+
+        <select id="destination">
+            <option value="">All Destinations</option>
+            <option value="Mangaluru">Mangaluru</option>
+            <option value="Udupi">Udupi</option>
+            <option value="Bengaluru">Bengaluru</option>
+            <option value="Mysuru">Mysuru</option>
+            <option value="Karkala">Karkala</option>
+        </select>
+
+        <h2>Available Buses</h2>
+
+        <div id="busList"></div>
+
+        <div id="details"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

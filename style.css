@@ -1,0 +1,58 @@
+
+body {
+    font-family: Arial;
+    background-color: lightcyan;
+}
+
+.container {
+    width: 85%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input, select {
+    padding: 10px;
+    margin: 8px;
+}
+
+#busList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.bus {
+    padding: 15px;
+    background-color: lightblue;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#details {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: lightyellow;
+}
+
+@media(max-width: 600px) {
+    #busList {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: auto;
+    }
+}
